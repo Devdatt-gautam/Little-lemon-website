@@ -4,7 +4,7 @@ import ButtonSecondary from "./ButtonSecondary";
 import "../styles/home.css";
 const Home = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="description">
         <h1>Little lemon</h1>
         <p>

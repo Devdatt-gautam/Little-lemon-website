@@ -1,0 +1,68 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  background: url(../assets/menu-bg.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.menu-heading {
+  color: var(--accent-color);
+  font-family: "Oregano";
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  text-decoration: underline;
+  margin-top: 5.5rem;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.filter-buttons::-webkit-scrollbar {
+  display: none;
+}
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  height: calc(100vh - 14rem);
+  gap: 2rem;
+  overflow-y: scroll;
+  padding-bottom: 10vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.dishes::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .menu {
+    font-size: 14px;
+    height: calc(100vh - 80px);
+  }
+  .menu-heading {
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .filter-buttons {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,19 @@
+.filter {
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+  font-family: "karla";
+  font-weight: 500;
+  font-size: 1.75em;
+  padding: 0.25em 1em;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: all ease 300ms;
+  border: none;
+  text-transform: capitalize;
+  display: grid;
+  place-content: center;
+}
+.filter:hover,
+.filter:focus {
+  background-color: var(--accent-color);
+}
