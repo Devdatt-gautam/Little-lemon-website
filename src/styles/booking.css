@@ -1,0 +1,128 @@
+.booking {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  background: url(../assets/bookingbg.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
+}
+.booking-form {
+  background-color: rgba(217, 217, 217, 0.08);
+  width: 65vw;
+  height: 85vh;
+  margin-inline: auto;
+  transform: translate(0px, 12vh);
+  backdrop-filter: blur(5px);
+  --webkit-backdrop-filter: blur(5px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem 5%;
+  text-transform: uppercase;
+  overflow-y: scroll;
+}
+.form-heading {
+  width: 100%;
+  font-family: "Oregano";
+  font-size: 2.75em;
+  color: var(--accent-color);
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+.input-group > label {
+  font-family: "Markazi Text";
+  font-weight: 500;
+  font-size: 2.75em;
+  color: white;
+}
+.input-group > input,
+.input-group > select {
+  font-size: 1.75em;
+  background-color: transparent;
+  border: solid 4px white;
+  color: var(--secondary-color);
+}
+input[type="radio"] {
+  accent-color: var(--accent-color);
+}
+.input-group > input:active,
+.input-group > input:focus,
+.input-group > select:active {
+  background-color: transparent;
+  border: solid 4px var(--accent-color);
+  color: var(--accent-color);
+}
+.input-group:nth-of-type(3),
+.input-group:nth-of-type(4),
+.input-group:nth-of-type(5),
+.input-group:nth-of-type(6) {
+  width: 40%;
+}
+.input-group:nth-of-type(7) {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+.indoor-grp,
+.outdoor-grp {
+  font-family: "Markazi Text";
+  font-weight: 500;
+  font-size: 2.75em;
+  color: white;
+  display: flex;
+  gap: 0.75em;
+}
+input[type="submit"] {
+  background-color: var(--accent-color);
+  width: 85%;
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+  font-size: 2.75em;
+  color: black;
+  text-transform: uppercase;
+  width: 85%;
+  padding: 0.5rem;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .booking {
+    height: calc(100vh - 80px);
+    overflow: scroll;
+    font-size: 14px;
+  }
+  .booking-form {
+    overflow: auto;
+  }
+  .input-group:nth-of-type(7) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 500px) {
+  .booking-form {
+    width: 85vw;
+  }
+  .input-group:nth-of-type(3),
+  .input-group:nth-of-type(4),
+  .input-group:nth-of-type(5),
+  .input-group:nth-of-type(6) {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .booking {
+    font-size: 12px;
+  }
+}

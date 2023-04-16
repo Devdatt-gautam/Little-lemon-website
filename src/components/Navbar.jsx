@@ -34,7 +34,7 @@ const Navbar = () => {
             <a href="#menu">menu</a>
           </li>
           <li className="nav-list-items">
-            <a href="#">booking</a>
+            <a href="#booking">booking</a>
           </li>
         </ul>
       </nav>

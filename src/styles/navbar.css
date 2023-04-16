@@ -73,7 +73,7 @@ header {
   .nav-list {
     flex-direction: column;
     text-align: center;
-    gap: 6em;
+    gap: clamp(10px, 6em, 90px);
   }
   .nav-list-items {
     padding: 1em 2em;
