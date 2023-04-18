@@ -49,7 +49,7 @@ const Menu = () => {
               description={description}
               key={index}
             >
-              <img src={image} alt={name} />
+              <img src={image} alt={name} loading="lazy" />
             </Card>
           );
         })}
