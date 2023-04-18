@@ -39,7 +39,9 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="cart">
-        <img src={Cart} alt="cart-icon" className="cart-icon" />
+        <a href="#booking">
+          <img src={Cart} alt="cart-icon" className="cart-icon" />
+        </a>
       </div>
     </header>
   );

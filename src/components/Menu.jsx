@@ -22,7 +22,7 @@ const Menu = () => {
   };
   return (
     <section className="menu" id="menu">
-      <h3 className="menu-heading">Order for delivery</h3>
+      <h3 className="menu-heading">Our menu</h3>
       <div className="filter-buttons">
         <FilterButton
           filter={() => setItems([...dishes])}

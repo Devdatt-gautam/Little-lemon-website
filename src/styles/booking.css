@@ -6,6 +6,7 @@
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: color;
+  position: relative;
 }
 .booking-form {
   background-color: rgba(217, 217, 217, 0.08);
@@ -94,6 +95,67 @@ input[type="submit"] {
   padding: 0.5rem;
   height: fit-content;
   margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: black;
+  color: var(--accent-color);
+}
+.form-error {
+  color: var(--accent-color);
+  text-transform: none;
+  font-family: "Karla";
+  font-weight: 500;
+  font-size: 1.25rem;
+  min-height: 1.75em;
+  width: fit-content;
+  float: top;
+}
+.booking-confirmation {
+  background: url(../assets/booking-bg2.jpg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65vw;
+  height: 85vh;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  color: white;
+  text-align: center;
+}
+.booking-confirmation > h3 {
+  color: var(--accent-color);
+  font-family: "Oregano";
+  text-decoration: dotted underline;
+}
+.booking-confirmation > button {
+  background-color: var(--accent-color);
+  color: black;
+  border: none;
+  transition: all 250ms linear;
+  width: 25%;
+  height: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.booking-confirmation > button:hover {
+  background-color: black;
+  color: var(--accent-color);
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: flex;
 }
 
 @media screen and (max-width: 650px) {
@@ -119,6 +181,10 @@ input[type="submit"] {
   .input-group:nth-of-type(5),
   .input-group:nth-of-type(6) {
     width: 85%;
+  }
+  .booking-confirmation {
+    width: 85vw;
+    height: 85vh;
   }
 }
 @media screen and (max-width: 320px) {
