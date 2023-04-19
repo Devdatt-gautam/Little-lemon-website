@@ -12,8 +12,12 @@ const Home = () => {
           bite .
         </p>
         <div className="cta">
-          <ButtonPrimary text="Reserve A Table" />
-          <ButtonSecondary text="Order Online" />
+          <a href="#booking">
+            <ButtonPrimary text="Reserve A Table" />
+          </a>
+          <a href="#menu">
+            <ButtonSecondary text="Explore Menu" />
+          </a>
         </div>
       </div>
     </section>

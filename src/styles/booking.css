@@ -189,6 +189,9 @@ input[type="submit"]:focus {
 }
 @media screen and (max-width: 320px) {
   .booking {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .booking-confirmation {
+    width: 95vw;
   }
 }

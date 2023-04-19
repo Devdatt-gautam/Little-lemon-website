@@ -51,12 +51,17 @@
     font-size: 14px;
     height: calc(100vh - 160px);
     padding-bottom: 80px;
+    scroll-margin-top: 80px;
   }
   .menu-heading {
     margin-top: 0.5rem;
   }
 }
 @media screen and (max-width: 650px) {
+  .menu {
+    padding-bottom: 10px;
+    height: calc(100vh - 90px);
+  }
   .filter-buttons {
     justify-content: flex-start;
     gap: 2rem;
